@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-l_*jou&+l=j*r7lf_xfcd4qy3_wxz1^u2mh1()!1nyrimkn1kn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.81.171.2', '3.81.171.2:5000']
-
+ALLOWED_HOSTS = ['3.81.171.2', '3.81.171.2:5000','127.0.0.1:4000','127.0.0.1']
+STATIC_URL = '/static/'
 
 # Application definition
 
@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'candles'
+    'candles',
+    # 'stick'
 ]
 
 MIDDLEWARE = [
